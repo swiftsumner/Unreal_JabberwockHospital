@@ -1,7 +1,7 @@
-# Unreal_JabberwockHospital
+# Jabberwock Hospital: Personal Project using Unreal Engine 5 and blueprint programming
 I recreated the Jabberwock Hospital from Danganronpa 2: Goodbye Despair in 3D using Unreal Engine and Blender, and used blueprint programming to create events that trigger based on the time of day as well as events that are based on the player's position. 
 
-Dangaonronpa 2 is a murder mystery game. Here are the screenshots from the original game that's mostly 2D.
+Dangaonronpa 2 is a murder mystery game. Here are the screenshots from the original game.
 ![hospital outside](https://github.com/user-attachments/assets/1c530dc1-45ea-41fa-936d-8a6caff88290)
 ![hospital lobby](https://github.com/user-attachments/assets/7b5ff54e-d3ce-4b5d-abc2-1a1a418b7c66)
 ![hallway](https://github.com/user-attachments/assets/f204c36d-82cf-4710-9072-a7b59602b900)
@@ -18,9 +18,10 @@ The breakdown video: https://www.youtube.com/watch?v=WH4GCpHf2HU
 
 I took creative liberties with the surrounding area of the hospital as I wanted to move onto other aspects of the Unreal Engine, like blueprint programming. 
 
+# Blueprint Programming
 
 ![BP_security_cam](https://github.com/user-attachments/assets/37771fec-e627-496d-80dd-ae2e0a7cc9f0)
-The cameras in the original game didn't move to face the player since they were part of a 2D background, but since this was a 3D open space environment, I wanted the cameras to always be facing the player to make it feel like they're being watched. The above script takes the positions of the camera and the player and updates the camera's z rotation value (with an offset of -90 degrees applied) so that it only rotates in that axis to follow the player while keeping the other axes constant.
+The cameras in the original game didn't move to face the player, but since my version was a 3D open space environment, I wanted the cameras to always be facing the player to make it feel like they're being watched. The above script takes the positions of the camera and the player and updates the camera's z rotation value (with an offset of -90 degrees applied) so that it only rotates in that axis to follow the player while keeping the other axes constant.
 
 
 ![BP_Day_Night_cycle](https://github.com/user-attachments/assets/80184347-364a-4638-8c77-aff24dfa32fc)
